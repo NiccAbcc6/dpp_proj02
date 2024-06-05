@@ -77,4 +77,11 @@ def login():
     return render_template('login.html')
 
 @app.route('/special_access')
-def special
+def special_access():
+    app.logger.debug("Rendering special access page")
+    product_info = get_product_info("http://example.com/tessile.owl#PatagoniaGiacca")
+    return render_template('special_access.html', product=product_info)
+
+if __name__ == '__main__':
+    app.logger.debug("Starting application")
+    app.run(debug=True)
