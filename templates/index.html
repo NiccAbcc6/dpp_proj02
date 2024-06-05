@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Digital Product Passport - Patagonia Giacca in Pile R1</title>
+</head>
+<body>
+    <h1>Digital Product Passport</h1>
+    <h2>{{ product.brandName }} Giacca in Pile R1</h2>
+    <p><strong>Descrizione:</strong> Giacca in pile realizzata con materiali riciclati</p>
+    <p><strong>Colore:</strong> {{ product.colore }}</p>
+    <p><strong>Composizione Fibrosa:</strong> {{ product.composizioneFibrosa }}</p>
+    <p><strong>Certificazioni:</strong> {{ product.certificazioneName }}</p>
+    <h3>Manutenzione e Uso</h3>
+    <p><strong>Lavaggio:</strong> {{ product.lavaggioTemperatura }}, {{ product.lavaggioDelicatezza }}</p>
+    <p><strong>Candeggio:</strong> {{ product.candeggio }}</p>
+    <p><strong>Asciugamento:</strong> {{ product.asciugamentoTipo }}, {{ product.asciugamentoTemperatura }}</p>
+    <p><strong>Stiratura:</strong> {{ product.stiraturaTipo }}</p>
+    <h3>Fine Vita e Riciclo</h3>
+    <p><strong>Opzioni di Riciclo:</strong> {{ product.ricicloOpzioni }}</p>
+    <p><strong>Punti di Raccolta:</strong> {{ product.ricicloPunti }}</p>
+    <a href="/login">Accesso Speciale</a>
+</body>
+</html>

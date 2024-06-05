@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ns1="http://example.com/tessile.owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://example.com/tessile.owl#Manutenzione1">
+    <rdf:type rdf:resource="http://example.com/tessile.owl#Manutenzione"/>
+    <ns1:stiraturaTipo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stiratura domestica con o senza vapore</ns1:stiraturaTipo>
+    <ns1:hasLavaggio rdf:resource="http://example.com/tessile.owl#Lavaggio1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/tessile.owl#PatagoniaGiacca">
+    <rdf:type rdf:resource="http://example.com/tessile.owl#Brand"/>
+    <ns1:brandName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Patagonia</ns1:brandName>
+    <ns1:colore rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blu</ns1:colore>
+    <ns1:hasComposizione rdf:resource="http://example.com/tessile.owl#Composizione1"/>
+    <ns1:hasCertificazione rdf:resource="http://example.com/tessile.owl#Certificazione1"/>
+    <ns1:hasManutenzione rdf:resource="http://example.com/tessile.owl#Manutenzione1"/>
+    <ns1:hasRiciclo rdf:resource="http://example.com/tessile.owl#Riciclo1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/tessile.owl#Lavaggio1">
+    <rdf:type rdf:resource="http://example.com/tessile.owl#Lavaggio"/>
+    <ns1:lavaggioTemperatura rdf:datatype="http://www.w3.org/2001/XMLSchema#string">30°C</ns1:lavaggioTemperatura>
+    <ns1:lavaggioDelicatezza rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Processo delicato</ns1:lavaggioDelicatezza>
+    <ns1:candeggio rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Non possibile</ns1:candeggio>
+    <ns1:asciugamentoTipo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Naturale</ns1:asciugamentoTipo>
+    <ns1:asciugamentoTemperatura rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Temperatura ambiente</ns1:asciugamentoTemperatura>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/tessile.owl#Riciclo1">
+    <rdf:type rdf:resource="http://example.com/tessile.owl#Riciclo"/>
+    <ns1:ricicloOpzioni rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restituzione a Patagonia per il riciclo del tessuto</ns1:ricicloOpzioni>
+    <ns1:ricicloPunti rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Negozi Patagonia</ns1:ricicloPunti>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/tessile.owl#Certificazione1">
+    <rdf:type rdf:resource="http://example.com/tessile.owl#Certificazione"/>
+    <ns1:certificazioneName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OEKO-TEX, GRS</ns1:certificazioneName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/tessile.owl#Composizione1">
+    <rdf:type rdf:resource="http://example.com/tessile.owl#Composizione"/>
+    <ns1:composizioneFibrosa rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Poliestere riciclato, spandex</ns1:composizioneFibrosa>
+  </rdf:Description>
+</rdf:RDF>
